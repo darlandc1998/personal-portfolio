@@ -1,6 +1,7 @@
 import React from 'react';
-import HomePage from './Pages/Home';
+import './i18n';
 import GlobalStyle from './Styles/Global';
+import HomePage from './Pages/Home';
 
 const App: React.FC = () => (
   <div>

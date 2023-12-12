@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import moment from 'moment';
 import Header from '../Header';
 import {
@@ -41,6 +42,7 @@ const fakeExperiences: IExperience[] = [
 ];
 
 const TimelineSection: React.FC = () => {
+  const { t } = useTranslation();
   const [experiences, setExperiences] = useState<IExperience[]>();
 
   useEffect(() => {
@@ -49,7 +51,7 @@ const TimelineSection: React.FC = () => {
 
   return (
     <>
-      <Header title="Timeline" />
+      <Header title={t('timeline.title')} />
       <Timeline>
         {experiences?.map((data, index) =>
           index % 2 > 0 ? (

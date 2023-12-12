@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from '../Header';
 import {
   Description,
@@ -19,36 +20,37 @@ const hobbiesFakes: IHobbies[] = [
   {
     image:
       'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216011/football_867329.png',
-    description: 'Playing soccer',
+    description: 'play_soccer',
   },
   {
     image:
       'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216142/tv_8936507.png',
-    description: 'Watching soccer games',
+    description: 'watch_soccer_game',
   },
   {
     image:
       'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216237/dispute_5110046.png',
-    description: 'Hanging out with family and friends',
+    description: 'hanging_out_family_and_friends',
   },
   {
     image:
       'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216377/pizza-shop_7845627.png',
-    description: 'Going out with family and friends',
+    description: 'going_out_family_and_friends',
   },
   {
     image:
       'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216441/cinema_2809590.png',
-    description: 'Going to the movies',
+    description: 'going_movies',
   },
   {
     image:
       'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216489/vacations_2664593.png',
-    description: 'Going to the beaches',
+    description: 'going_beach',
   },
 ];
 
 const HobbiesSection: React.FC = () => {
+  const { t } = useTranslation();
   const [hobbies, setHobbies] = useState<IHobbies[]>();
 
   useEffect(() => {
@@ -64,7 +66,7 @@ const HobbiesSection: React.FC = () => {
             <CardContainer>
               <Card>
                 <Cover src={hobby.image} preview={false} />
-                <Description>{hobby.description}</Description>
+                <Description>{t('hobbies.' + hobby.description)}</Description>
               </Card>
             </CardContainer>
           </ColContainer>
