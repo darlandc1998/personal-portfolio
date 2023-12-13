@@ -16,6 +16,7 @@ module.exports = {
     alias: {
       '@Components': path.resolve(__dirname, 'src', 'Components'),
       '@Styles': path.resolve(__dirname, 'src', 'Styles'),
+      '@Images': path.resolve(__dirname, 'src', 'Assets', 'Images'),
     },
   },
   module: {
@@ -32,8 +33,7 @@ module.exports = {
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
-        use: ['file-loader'],
+        use: ['url-loader'],
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,

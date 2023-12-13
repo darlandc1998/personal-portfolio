@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ContainerFlags, Flag } from './styles';
+import BrasilFlag from '@Images/Flags/brasil_flag.svg';
+import EUAFlag from '@Images/Flags/eua_flag.svg';
 
 const I18nFlags: React.FC = () => {
   const { i18n } = useTranslation();
@@ -13,12 +15,12 @@ const I18nFlags: React.FC = () => {
   return (
     <ContainerFlags>
       <Flag
-        src="https://res.cloudinary.com/du5rnoez4/image/upload/v1702344184/brasil-flag.svg"
+        src={BrasilFlag}
         isSelected={selectedLanguage === 'pt-BR'}
         onClick={() => handleChangeLanguage('pt-BR')}
       />
       <Flag
-        src="https://res.cloudinary.com/du5rnoez4/image/upload/v1702344184/eua-flag.svg"
+        src={EUAFlag}
         isSelected={selectedLanguage === 'en-US'}
         onClick={() => handleChangeLanguage('en-US')}
       />

@@ -19,32 +19,32 @@ interface IHobbies {
 const hobbiesFakes: IHobbies[] = [
   {
     image:
-      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216011/football_867329.png',
+      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216011/PersonalPortfolio/Hobbies/football_867329.png',
     description: 'play_soccer',
   },
   {
     image:
-      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216142/tv_8936507.png',
+      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216142/PersonalPortfolio/Hobbies/tv_8936507.png',
     description: 'watch_soccer_game',
   },
   {
     image:
-      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216237/dispute_5110046.png',
+      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216237/PersonalPortfolio/Hobbies/dispute_5110046.png',
     description: 'hanging_out_family_and_friends',
   },
   {
     image:
-      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216377/pizza-shop_7845627.png',
+      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216377/PersonalPortfolio/Hobbies/pizza-shop_7845627.png',
     description: 'going_out_family_and_friends',
   },
   {
     image:
-      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216441/cinema_2809590.png',
+      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216441/PersonalPortfolio/Hobbies/cinema_2809590.png',
     description: 'going_movies',
   },
   {
     image:
-      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216489/vacations_2664593.png',
+      'https://res.cloudinary.com/du5rnoez4/image/upload/v1702216489/PersonalPortfolio/Hobbies/vacations_2664593.png',
     description: 'going_beach',
   },
 ];

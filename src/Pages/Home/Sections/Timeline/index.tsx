@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import moment from 'moment';
 import Header from '../Header';
 import {
   Timeline,
@@ -9,79 +8,124 @@ import {
   Content,
   ContentInformation,
   Title,
+  ContentPeriod,
   Period,
   Description,
+  Tech,
+  ContainerTech,
+  TechTitle,
+  ContentTech,
 } from './styles';
-
-interface IExperience {
-  title: string;
-  start: Date;
-  end: Date;
-  description: string;
-}
-
-const fakeExperiences: IExperience[] = [
-  {
-    title: 'Experience 1',
-    description: 'Description',
-    start: new Date(),
-    end: new Date(),
-  },
-  {
-    title: 'Experience 2',
-    description: 'Description',
-    start: new Date(),
-    end: new Date(),
-  },
-  {
-    title: 'Experience 3',
-    description: 'Description',
-    start: new Date(),
-    end: new Date(),
-  },
-];
 
 const TimelineSection: React.FC = () => {
   const { t } = useTranslation();
-  const [experiences, setExperiences] = useState<IExperience[]>();
-
-  useEffect(() => {
-    setExperiences(fakeExperiences);
-  }, []);
 
   return (
     <>
       <Header title={t('timeline.title')} />
       <Timeline>
-        {experiences?.map((data, index) =>
-          index % 2 > 0 ? (
-            <ContainerRight key={index}>
-              <Content>
-                <ContentInformation>
-                  <Title>{data.title}</Title>
-                  <Period>
-                    {moment(data.start).format('LL')}
-                    {moment(data.end).format('LL')}
-                  </Period>
-                  <Description>{data.description}</Description>
-                </ContentInformation>
-              </Content>
-            </ContainerRight>
-          ) : (
-            <ContainerLeft key={index}>
-              <Content>
-                <ContentInformation>
-                  <Title>{data.title}</Title>
-                  <Period>
-                    {moment(data.start).format('LL')} to
-                    {moment(data.end).format('LL')}
-                  </Period>
-                  <Description>{data.description}</Description>
-                </ContentInformation>
-              </Content>
-            </ContainerLeft>
-          ),
-        )}
+        <ContainerLeft>
+          <Content>
+            <ContentInformation>
+              <Title>{t('work_experiences.segware_position')}</Title>
+              <ContentPeriod>
+                <Period>{t('work_experiences.segware_start')}</Period>
+                <Period>{t('work_experiences.prefix_duration')}</Period>
+                <Period>{t('work_experiences.segware_end')}</Period>
+              </ContentPeriod>
+              <Description>
+                {t('work_experiences.segware_description')}
+              </Description>
+              <ContainerTech>
+                <TechTitle>{t('timeline.technologies')}: </TechTitle>
+                <ContentTech>
+                  <Tech>Java</Tech>
+                  <Tech>Spring Boot</Tech>
+                  <Tech>Kafka</Tech>
+                  <Tech>Redis</Tech>
+                  <Tech>MongoDB</Tech>
+                  <Tech>MySQL</Tech>
+                </ContentTech>
+              </ContainerTech>
+            </ContentInformation>
+          </Content>
+        </ContainerLeft>
+        <ContainerRight>
+          <Content>
+            <ContentInformation>
+              <Title>{t('work_experiences.teammove_position')}</Title>
+              <ContentPeriod>
+                <Period>{t('work_experiences.teammove_start')}</Period>
+                <Period>{t('work_experiences.prefix_duration')}</Period>
+                <Period>{t('work_experiences.teammove_end')}</Period>
+              </ContentPeriod>
+              <Description>
+                {t('work_experiences.teammove_description')}
+              </Description>
+              <ContainerTech>
+                <TechTitle>{t('timeline.technologies')}: </TechTitle>
+                <ContentTech>
+                  <Tech>ReactJS</Tech>
+                  <Tech>ReactNative</Tech>
+                  <Tech>NodeJS</Tech>
+                  <Tech>PostgreSQL</Tech>
+                  <Tech>Java Server Faces</Tech>
+                </ContentTech>
+              </ContainerTech>
+            </ContentInformation>
+          </Content>
+        </ContainerRight>
+        <ContainerLeft>
+          <Content>
+            <ContentInformation>
+              <Title>{t('coursers_experiences.unesc_position')}</Title>
+              <ContentPeriod>
+                <Period>{t('coursers_experiences.unesc_start')}</Period>
+                <Period>{t('coursers_experiences.prefix_duration')}</Period>
+                <Period>{t('coursers_experiences.unesc_end')}</Period>
+              </ContentPeriod>
+              <Description>
+                {t('coursers_experiences.unesc_description')}
+              </Description>
+            </ContentInformation>
+          </Content>
+        </ContainerLeft>
+        <ContainerRight>
+          <Content>
+            <ContentInformation>
+              <Title>{t('work_experiences.tw_position')}</Title>
+              <ContentPeriod>
+                <Period>{t('work_experiences.tw_start')}</Period>
+                <Period>{t('work_experiences.prefix_duration')}</Period>
+                <Period>{t('work_experiences.tw_end')}</Period>
+              </ContentPeriod>
+              <Description>{t('work_experiences.tw_description')}</Description>
+              <ContainerTech>
+                <TechTitle>{t('timeline.technologies')}: </TechTitle>
+                <ContentTech>
+                  <Tech>Java Server Faces</Tech>
+                  <Tech>Android</Tech>
+                  <Tech>PostgreSQL</Tech>
+                </ContentTech>
+              </ContainerTech>
+            </ContentInformation>
+          </Content>
+        </ContainerRight>
+        <ContainerLeft>
+          <Content>
+            <ContentInformation>
+              <Title>{t('coursers_experiences.satc_position')}</Title>
+              <ContentPeriod>
+                <Period>{t('coursers_experiences.satc_start')}</Period>
+                <Period>{t('coursers_experiences.prefix_duration')}</Period>
+                <Period>{t('coursers_experiences.satc_end')}</Period>
+              </ContentPeriod>
+              <Description>
+                {t('coursers_experiences.satc_description')}
+              </Description>
+            </ContentInformation>
+          </Content>
+        </ContainerLeft>
       </Timeline>
     </>
   );

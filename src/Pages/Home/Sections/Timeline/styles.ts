@@ -134,27 +134,79 @@ export const Content = styled.div`
 `;
 
 export const ContentInformation = styled.div`
+  background-color: ${Colors.primaryTextColor};
   display: flex;
   flex-direction: column;
 `;
 
 export const Title = styled.span`
   background-color: ${Colors.primaryTextColor};
-  color: black;
+  color: ${Colors.primaryBackgroundColor};
   font-size: 35px;
   font-weight: bold;
+`;
+
+export const ContentPeriod = styled.div`
+  background-color: ${Colors.primaryTextColor};
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-self: flex-end;
+  padding: 10px 0px;
 `;
 
 export const Period = styled.span`
   background-color: ${Colors.primaryTextColor};
   color: rgb(92, 84, 112);
   font-size: 20px;
-  flex: 1;
-  text-align: right;
+  padding: 0px 5px;
+  border-bottom: 3px solid ${Colors.secondaryBackgroundColor};
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 `;
 
 export const Description = styled.span`
   background-color: ${Colors.primaryTextColor};
   color: black;
   font-size: 28px;
+`;
+
+export const ContainerTech = styled.div`
+  background-color: ${Colors.primaryTextColor};
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+`;
+
+export const TechTitle = styled.span`
+  background-color: ${Colors.primaryTextColor};
+  color: black;
+  font-size: 23px;
+  margin-right: 5px;
+`;
+
+export const ContentTech = styled.div`
+  background-color: ${Colors.primaryTextColor};
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 1169px) and (max-width: 1440px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media screen and (max-width: 1168px) {
+    grid-template-columns: auto;
+    border-radius: 5px;
+  }
+`;
+
+export const Tech = styled.span`
+  background-color: ${Colors.primaryBackgroundColor};
+  color: ${Colors.primaryTextColor};
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 3px 15px;
+  text-align: center;
 `;

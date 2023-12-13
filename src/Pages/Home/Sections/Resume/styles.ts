@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { device } from '@Styles/Devices';
 import { Colors } from '@Styles/Colors';
+import cover from '@Images/Profiles/cover.jpg';
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(rgba(40, 42, 54, 0.92), rgba(40, 42, 54, 0.92)),
+    url(${cover});
 
   @media ${device.laptop} {
     flex-direction: row;
@@ -16,9 +19,11 @@ export const ProfileContent = styled.div`
   display: flex;
   flex: 1;
   text-align: left;
+  background-color: transparent;
 `;
 
 export const ProfilePicture = styled.img`
+  background-color: transparent;
   position: relative;
   object-fit: cover;
   object-position: bottom;
@@ -48,6 +53,7 @@ export const ProfilePicture = styled.img`
 `;
 
 export const DetailContent = styled.div`
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -55,6 +61,7 @@ export const DetailContent = styled.div`
 `;
 
 export const Name = styled.div`
+  background-color: transparent;
   position: relative;
   font-size: 70px;
 
@@ -117,6 +124,7 @@ export const Name = styled.div`
 `;
 
 export const Profession = styled.div`
+  background-color: transparent;
   position: relative;
   font-size: 40px;
   @media ${device.laptop} {

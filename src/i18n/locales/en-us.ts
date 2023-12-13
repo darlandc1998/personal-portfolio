@@ -6,10 +6,11 @@ export default {
     about: {
       title: 'About me',
       description:
-        'I have been working with programming since 2015 (Over 8 years of experience), I am a full-stack developer, working with a range of technologies, like Java, JavaScript, and other web frameworks. I have experience in developing and maintaining software applications, ensuring code quality, and optimizing performance. Moreover, I have led a team with 3 people, I was responsible for creating their tasks and analyzing them as well. I really believe that code quality is one of the most important things for excellent software work. So that is the reason I am all the time reading articles and keeping me updated about the new technologies on the market. Therefore, I believe that my ability to work very well in the group and my hard work to deliver high-quality code align with the values of the company. I am excited about the opportunity to work at Avanade, because like me you are constantly innovating about technologies and ideas for the better of the people. I am confident that my skills, problem- solving abilities, and dedication to keeping updated can make me the right candidate for this software developer role. Moreover, I am an Italian citizen and have my passport on hand so I can travel there when necessary.',
+        'Hello, my name is Darlan D. Candiotto, It is a pleasure to see you here. \nI am a Java and JavaScript software developer. I started my career in 2015 with mobile development (native android). However, during all my years as a programmer, I have got experience in full-stack development, working on the front-end with JSF and ReactJS technologies, and on the back-end with NodeJS and Java (Spring Boot). Moreover, I have jobs with React Native as well.',
     },
     timeline: {
       title: 'Timeline',
+      technologies: 'Technologies',
     },
     hobbies: {
       title: 'Hobbies',
@@ -19,6 +20,36 @@ export default {
       going_out_family_and_friends: 'Going out with family and friends',
       going_movies: 'Going to the movies',
       going_beach: 'Going to the beaches',
+    },
+    work_experiences: {
+      segware_position: 'Software developer at Segware',
+      segware_start: '2023-02-20',
+      segware_end: 'nowadays',
+      segware_description:
+        'Back-end developer responsible for the development and maintenance of scalable systems.',
+      teammove_position: 'Software developer at TeamMove',
+      teammove_start: '2018-11-01',
+      teammove_end: '2023-02-17',
+      teammove_description:
+        'Full-stack developer responsible for the development and maintenance of scalable systems, and responsible for the stability and availability of the software.',
+      tw_position: 'Software developer at TW Sistemas',
+      tw_start: '2015-11-30',
+      tw_end: '2018-03-01',
+      tw_description:
+        'Full-stack developer responsible for the development and maintenance of scalable systems.',
+      prefix_duration: 'to',
+    },
+    coursers_experiences: {
+      satc_position: 'Technical course computing at SATC',
+      satc_start: '2014-02-20',
+      satc_end: '2015-11-30',
+      satc_description:
+        'Beginning concepts about programming like Object-Oriented Programming (OOP)',
+      unesc_position: 'Bachelor of Computer Science at UNESC',
+      unesc_start: '2016-08-01',
+      unesc_end: '2020-12-20',
+      unesc_description: 'Deeper concepts about programming.',
+      prefix_duration: 'to',
     },
   },
 };
