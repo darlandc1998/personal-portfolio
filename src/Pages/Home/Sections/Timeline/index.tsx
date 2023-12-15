@@ -16,6 +16,8 @@ import {
   TechTitle,
   ContentTech,
 } from './styles';
+import BriefCaseSVG from '@Images/Timeline/briefcase.svg';
+import CollegeSVG from '@Images/Timeline/college.svg';
 
 const TimelineSection: React.FC = () => {
   const { t } = useTranslation();
@@ -24,7 +26,7 @@ const TimelineSection: React.FC = () => {
     <>
       <Header title={t('timeline.title')} />
       <Timeline>
-        <ContainerLeft>
+        <ContainerLeft iconType={BriefCaseSVG}>
           <Content>
             <ContentInformation>
               <Title>{t('work_experiences.segware_position')}</Title>
@@ -50,7 +52,7 @@ const TimelineSection: React.FC = () => {
             </ContentInformation>
           </Content>
         </ContainerLeft>
-        <ContainerRight>
+        <ContainerRight iconType={BriefCaseSVG}>
           <Content>
             <ContentInformation>
               <Title>{t('work_experiences.teammove_position')}</Title>
@@ -69,13 +71,13 @@ const TimelineSection: React.FC = () => {
                   <Tech>ReactNative</Tech>
                   <Tech>NodeJS</Tech>
                   <Tech>PostgreSQL</Tech>
-                  <Tech>Java Server Faces</Tech>
+                  <Tech>JavaServerFaces</Tech>
                 </ContentTech>
               </ContainerTech>
             </ContentInformation>
           </Content>
         </ContainerRight>
-        <ContainerLeft>
+        <ContainerLeft iconType={CollegeSVG}>
           <Content>
             <ContentInformation>
               <Title>{t('coursers_experiences.unesc_position')}</Title>
@@ -90,7 +92,7 @@ const TimelineSection: React.FC = () => {
             </ContentInformation>
           </Content>
         </ContainerLeft>
-        <ContainerRight>
+        <ContainerRight iconType={BriefCaseSVG}>
           <Content>
             <ContentInformation>
               <Title>{t('work_experiences.tw_position')}</Title>
@@ -103,7 +105,7 @@ const TimelineSection: React.FC = () => {
               <ContainerTech>
                 <TechTitle>{t('timeline.technologies')}: </TechTitle>
                 <ContentTech>
-                  <Tech>Java Server Faces</Tech>
+                  <Tech>JavaServerFaces</Tech>
                   <Tech>Android</Tech>
                   <Tech>PostgreSQL</Tech>
                 </ContentTech>
@@ -111,7 +113,7 @@ const TimelineSection: React.FC = () => {
             </ContentInformation>
           </Content>
         </ContainerRight>
-        <ContainerLeft>
+        <ContainerLeft iconType={CollegeSVG}>
           <Content>
             <ContentInformation>
               <Title>{t('coursers_experiences.satc_position')}</Title>

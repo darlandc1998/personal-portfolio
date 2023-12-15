@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Colors } from '@Styles/Colors';
 
+interface ITimelineProps {
+  iconType: string;
+}
+
 export const Timeline = styled.div`
   position: relative;
   max-width: 1200px;
@@ -17,15 +21,17 @@ export const Timeline = styled.div`
     margin-left: -3px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     ::after {
-      left: 31px;
+      left: 5% !important;
     }
   }
 `;
 
-export const ContainerLeft = styled.div`
-  padding: 10px 40px;
+export const ContainerLeft = styled.div<ITimelineProps>`
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 50px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -34,10 +40,12 @@ export const ContainerLeft = styled.div`
   ::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: ${Colors.primaryTextColor};
+    width: 60px;
+    height: 60px;
+    right: -33px;
+    background: url(${props => props.iconType}), ${Colors.primaryTextColor};
+    background-repeat: no-repeat;
+    background-position: center;
     border: 4px solid ${Colors.secondaryBackgroundColor};
     top: 15px;
     border-radius: 50%;
@@ -48,34 +56,36 @@ export const ContainerLeft = styled.div`
     content: ' ';
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 40px;
     width: 0;
     z-index: 1;
-    right: 30px;
+    right: 40px;
     border: medium solid ${Colors.primaryTextColor};
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent ${Colors.primaryTextColor};
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 100px;
+    padding-bottom: 50px;
     ::before {
-      left: 60px;
+      left: 91px;
       border: medium solid ${Colors.primaryTextColor};
       border-width: 10px 10px 10px 0;
       border-color: transparent ${Colors.primaryTextColor} transparent
         transparent;
     }
     ::after {
-      left: 15px;
+      left: 10px;
     }
   }
 `;
 
-export const ContainerRight = styled.div`
-  padding: 10px 40px;
+export const ContainerRight = styled.div<ITimelineProps>`
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -84,44 +94,47 @@ export const ContainerRight = styled.div`
   ::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 60px;
+    height: 60px;
     right: -17px;
-    background-color: ${Colors.primaryTextColor};
+    background: url(${props => props.iconType}), ${Colors.primaryTextColor};
+    background-repeat: no-repeat;
+    background-position: center;
     border: 4px solid ${Colors.secondaryBackgroundColor};
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-    left: -16px;
+    left: -35px;
   }
 
   ::before {
     content: ' ';
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 40px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 40px;
     border: medium solid ${Colors.primaryTextColor};
     border-width: 10px 10px 10px 0;
     border-color: transparent ${Colors.primaryTextColor} transparent transparent;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     left: 0%;
     ::before {
-      left: 60px;
+      left: 91px;
       border: medium solid ${Colors.primaryTextColor};
       border-width: 10px 10px 10px 0;
       border-color: transparent ${Colors.primaryTextColor} transparent
         transparent;
     }
     ::after {
-      left: 15px;
+      left: 10px;
     }
   }
 `;
@@ -197,7 +210,7 @@ export const ContentTech = styled.div`
   }
 
   @media screen and (max-width: 1168px) {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     border-radius: 5px;
   }
 `;
