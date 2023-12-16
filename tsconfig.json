@@ -17,7 +17,8 @@
     "paths": {
       "@Components/*": ["Components/*"],
       "@Styles/*": ["Styles/*"],
-      "@Images/*": ["Assets/Images/*"]
+      "@Images/*": ["Assets/Images/*"],
+      "@Utils/*": ["Utils/*"]
     },
     "allowJs": true,
   },

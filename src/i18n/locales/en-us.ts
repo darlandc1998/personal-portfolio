@@ -9,7 +9,7 @@ export default {
         'Hello, my name is Darlan D. Candiotto, It is a pleasure to see you here. I have been working with programming since 2015, I am a full-stack developer, working with a range of technologies, like Java, JavaScript, and other web frameworks. I have experience in developing and maintaining software applications, ensuring code quality, and optimizing performance. Moreover, I have led a team with 3 people, I was responsible for creating their tasks and analyzing them as well. I really believe that code quality is one of the most important things for excellent software work. So that is the reason I am all the time reading articles and keeping me updated about the new technologies on the market.',
     },
     timeline: {
-      title: 'Timeline',
+      title: 'Experiences',
       technologies: 'Technologies',
     },
     hobbies: {
@@ -53,6 +53,14 @@ export default {
     },
     skills: {
       title: 'Stacks',
+    },
+    contact: {
+      title: 'Contact me',
+      name: 'Name',
+      email: 'Email',
+      message: 'Write some message to me',
+      send_button: 'Send',
+      developer: 'Developed by',
     },
   },
 };

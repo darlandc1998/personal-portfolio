@@ -21,8 +21,8 @@ const HomePage: React.FC = () => (
       <SkillsSection />
       <ContentGapTop />
       <HobbiesSection />
-      <ContactMeSection />
     </Content>
+    <ContactMeSection />
   </Container>
 );
 

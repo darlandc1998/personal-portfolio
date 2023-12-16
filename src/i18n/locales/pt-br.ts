@@ -9,7 +9,7 @@ export default {
         'Olá, meu nome é Darlan D. Candiotto, é um prazer vê-lo aqui. Trabalho com programação desde 2015, sou desenvolvedor full-stack, trabalhando com diversas tecnologias, como Java, JavaScript e outros frameworks. Tenho experiência no desenvolvimento e manutenção de aplicações de software, garantindo a qualidade do código e otimizando o desempenho. Além disso, liderei uma equipe de 3 pessoas, fui responsável por criar suas tarefas e também analisá-las. Eu realmente acredito que a qualidade do código é uma das coisas mais importantes para um excelente software funcionar corretamente. Por isso que estou sempre lendo artigos e me mantendo atualizado sobre as novas tecnologias do mercado.',
     },
     timeline: {
-      title: 'Linha do tempo',
+      title: 'Experiências',
       technologies: 'Tecnologias',
     },
     hobbies: {
@@ -43,9 +43,8 @@ export default {
       satc_position: 'Curso técnico de informática na SATC',
       satc_start: '20/02/2014',
       satc_end: '30/11/2015',
-      satc_description:
-        'Conceitos iniciais sobre programação, como Programação Orientada a Objetos (POO)',
-      unesc_position: 'Bacharel em Ciência da Computação pela UNESC',
+      satc_description: 'Conceitos iniciais sobre programação.',
+      unesc_position: 'Bacharel em Ciência da Computação na UNESC',
       unesc_start: '01/08/2016',
       unesc_end: '20/12/2020',
       unesc_description: 'Conceitos mais aprofundados sobre programação.',
@@ -53,6 +52,14 @@ export default {
     },
     skills: {
       title: 'Stacks',
+    },
+    contact: {
+      title: 'Fale comigo',
+      name: 'Nome',
+      email: 'Email',
+      message: 'Escreva alguma mensagem para mim',
+      send_button: 'Enviar',
+      developer: 'Desenvolvido por',
     },
   },
 };
