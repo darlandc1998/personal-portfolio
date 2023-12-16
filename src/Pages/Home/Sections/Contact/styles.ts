@@ -132,10 +132,8 @@ export const ButtonInput = styled(Button)`
     color: ${Colors.primaryBackgroundColor};
     font-weight: bold;
   }
-  :where(.css-dev-only-do-not-override-6j9yrn).ant-btn-primary:not(
-      :disabled
-    ):not(.ant-btn-disabled):hover {
-    background: ${lightenColor(Colors.secondaryBackgroundColor, 10)};
+  :hover {
+    background: ${lightenColor(Colors.secondaryBackgroundColor, 10)} !important;
   }
 `;
 
