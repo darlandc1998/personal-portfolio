@@ -13,7 +13,6 @@ import {
   ContentImage,
   ImageCover,
   ContentContactMe,
-  Developer,
 } from './styles';
 
 const ContactMeSection: React.FC = () => {
@@ -28,9 +27,6 @@ const ContactMeSection: React.FC = () => {
             height={300}
             src="https://res.cloudinary.com/du5rnoez4/image/upload/v1702764070/PersonalPortfolio/Contact/contact_cover.svg"
           />
-          <Developer>
-            {t('contact.developer')} Darlan Domingos Candiotto
-          </Developer>
         </ContentImage>
         <ContainerForm>
           <TitleForm>{t('contact.title')}</TitleForm>

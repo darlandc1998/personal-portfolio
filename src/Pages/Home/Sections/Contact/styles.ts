@@ -61,14 +61,6 @@ export const ImageCover = styled(Image)`
   background: ${lightenColor(Colors.primaryBackgroundColor, 10)};
 `;
 
-export const Developer = styled(Text)`
-  text-align: center;
-  color: ${Colors.secondaryBackgroundColor};
-  background: ${lightenColor(Colors.primaryBackgroundColor, 10)};
-  padding-top: 5px;
-  font-weight: bold;
-`;
-
 export const ContainerForm = styled(View)`
   display: block;
   background-color: transparent;
