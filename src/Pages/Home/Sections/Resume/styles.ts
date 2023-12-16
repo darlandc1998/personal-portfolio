@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import {
+  LinkedinOutlined,
+  GithubOutlined,
+  InstagramOutlined,
+  GitlabOutlined,
+} from '@ant-design/icons';
 import { device } from '@Styles/Devices';
 import { Colors } from '@Styles/Colors';
 import cover from '@Images/Profiles/cover.jpg';
@@ -150,5 +156,74 @@ export const Profession = styled.div`
         right: 320px;
       }
     }
+  }
+`;
+
+export const Contacts = styled.div`
+  background-color: transparent;
+  position: relative;
+  padding-top: 10px;
+
+  @media ${device.laptop} {
+    animation: ContactsMove 3s both;
+    @keyframes ContactsMove {
+      from {
+        right: 0px;
+      }
+      to {
+        right: 150px;
+      }
+    }
+  }
+  @media ${device.desktop} {
+    animation: ContactsMove 5s both;
+    @keyframes ContactsMove {
+      from {
+        right: 0px;
+      }
+      to {
+        right: 320px;
+      }
+    }
+  }
+`;
+
+export const LinkedinOutlinedContact = styled(LinkedinOutlined)`
+  color: ${Colors.primaryTextColor};
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.2);
+  }
+`;
+
+export const GithubOutlinedContact = styled(GithubOutlined)`
+  color: ${Colors.primaryTextColor};
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.2);
+  }
+`;
+
+export const InstagramOutlinedContact = styled(InstagramOutlined)`
+  color: ${Colors.primaryTextColor};
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.2);
+  }
+`;
+
+export const GitlabOutlinedContact = styled(GitlabOutlined)`
+  color: ${Colors.primaryTextColor};
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.2);
   }
 `;

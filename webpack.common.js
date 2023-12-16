@@ -47,7 +47,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'BlogDarlan',
+      title: 'Darlan',
       template: path.resolve(__dirname, './public/index.html'), // template file
       filename: 'index.html', // output file
     }),

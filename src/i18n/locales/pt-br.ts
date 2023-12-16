@@ -6,7 +6,7 @@ export default {
     about: {
       title: 'Sobre',
       description:
-        'Olá, meu nome é Darlan D. Candiotto, é um prazer vê-lo aqui. Sou desenvolvedor de software Java e JavaScript. Iniciei minha carreira em 2015 com desenvolvimento mobile (android nativo). Porém, durante todos os meus anos como programador, adquiri experiência em desenvolvimento full-stack, trabalhando no front-end com tecnologias JSF e ReactJS, e no back-end com NodeJS e Java (Spring Boot). Além disso, também tenho trabalhos com React Native.',
+        'Olá, meu nome é Darlan D. Candiotto, é um prazer vê-lo aqui. Trabalho com programação desde 2015, sou desenvolvedor full-stack, trabalhando com diversas tecnologias, como Java, JavaScript e outros frameworks. Tenho experiência no desenvolvimento e manutenção de aplicações de software, garantindo a qualidade do código e otimizando o desempenho. Além disso, liderei uma equipe de 3 pessoas, fui responsável por criar suas tarefas e também analisá-las. Eu realmente acredito que a qualidade do código é uma das coisas mais importantes para um excelente software funcionar corretamente. Por isso que estou sempre lendo artigos e me mantendo atualizado sobre as novas tecnologias do mercado.',
     },
     timeline: {
       title: 'Linha do tempo',
@@ -16,8 +16,8 @@ export default {
       title: 'Hobbies',
       play_soccer: 'Jogar futebol',
       watch_soccer_game: 'Assistir jogos de futebol',
-      hanging_out_family_and_friends: 'Ficar com família e amigos',
-      going_out_family_and_friends: 'Passear com família e amigos',
+      hanging_out_family_and_friends: 'Ficar com a família e amigos',
+      going_out_family_and_friends: 'Passear com a família e amigos',
       going_movies: 'Ir ao cinema',
       going_beach: 'Ir para a praia',
     },
@@ -50,6 +50,9 @@ export default {
       unesc_end: '20/12/2020',
       unesc_description: 'Conceitos mais aprofundados sobre programação.',
       prefix_duration: 'até',
+    },
+    skills: {
+      title: 'Stacks',
     },
   },
 };

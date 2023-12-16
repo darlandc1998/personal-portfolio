@@ -6,7 +6,7 @@ export default {
     about: {
       title: 'About me',
       description:
-        'Hello, my name is Darlan D. Candiotto, It is a pleasure to see you here. \nI am a Java and JavaScript software developer. I started my career in 2015 with mobile development (native android). However, during all my years as a programmer, I have got experience in full-stack development, working on the front-end with JSF and ReactJS technologies, and on the back-end with NodeJS and Java (Spring Boot). Moreover, I have jobs with React Native as well.',
+        'Hello, my name is Darlan D. Candiotto, It is a pleasure to see you here. I have been working with programming since 2015, I am a full-stack developer, working with a range of technologies, like Java, JavaScript, and other web frameworks. I have experience in developing and maintaining software applications, ensuring code quality, and optimizing performance. Moreover, I have led a team with 3 people, I was responsible for creating their tasks and analyzing them as well. I really believe that code quality is one of the most important things for excellent software work. So that is the reason I am all the time reading articles and keeping me updated about the new technologies on the market.',
     },
     timeline: {
       title: 'Timeline',
@@ -50,6 +50,9 @@ export default {
       unesc_end: '2020-12-20',
       unesc_description: 'Deeper concepts about programming.',
       prefix_duration: 'to',
+    },
+    skills: {
+      title: 'Stacks',
     },
   },
 };

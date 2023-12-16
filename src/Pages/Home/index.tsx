@@ -6,6 +6,8 @@ import ResumeSection from './Sections/Resume';
 import AboutSection from './Sections/About';
 import TimelineSection from './Sections/Timeline';
 import HobbiesSection from './Sections/Hobbies';
+import SkillsSection from './Sections/Skills';
+import ContactMeSection from './Sections/Contact';
 
 const HomePage: React.FC = () => (
   <Container>
@@ -16,7 +18,10 @@ const HomePage: React.FC = () => (
       <ContentGapTop />
       <TimelineSection />
       <ContentGapTop />
+      <SkillsSection />
+      <ContentGapTop />
       <HobbiesSection />
+      <ContactMeSection />
     </Content>
   </Container>
 );
